@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/19bdd19522.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: #F2F2F2;
+        }
+
+        .navbarClass {
+            background-color: #C3404E !important;
+            color: white !important;
+
+        }
+
+        .cWClass {
+            color: white !important;
+        }
+
+        .searchBarClass {
+            border: 1px solid white;
+            border-radius: 3px;
+            padding-left: 10px;
+            width: 350px;
+            height: 35px;
+            margin-bottom: 0 !important;
+            margin-top: 3px;
+        }
+
+        .navbarUlClass {
+            width: 100%;
+            margin-left: 18%;
+        }
+
+        .secondaryUl {}
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm bg-light navbar-light navbarClass fixed-top">
+        <a class="navbar-brand cWClass" href="#">Gift Shop</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav navbarUlClass">
+                <li class="nav-item">
+                    <input class="form-input searchBarClass" type="text" placeholder="Search...">
+                </li>
+
+            </ul>
+            <ul class="navbar-nav secondaryUl">
+                <li class="nav-item ">
+                    <div class="container">
+                        <i class="fas fa-cart-arrow-down fa-lg"></i>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="container">
+                        <i class="far fa-user fa-lg"></i>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </nav>

@@ -1,0 +1,211 @@
+<%- include('partials/pageHeaders.ejs') %>
+    <link rel="stylesheet" href="./css/cardsStyles.css">
+
+    <link rel="stylesheet" href="./css/admin.css">
+    <div class="sidenav">
+        <a class="commanClickClass" data-id="cardsAdminPopUP">ALL Products</a>
+        <a class="commanClickClass" data-id="addProductsId">Add New Product</a>
+        <a class="commanClickClass" data-id="categoryPopUp">Add New Category</a>
+    </div>
+
+
+    <div class=" main">
+
+        <div class="container mainDivClass " style="display: none;" id="addProductsId">
+
+            <div class="form-group">
+                <label>Image</label>
+                <input type="file" name="imageName" id="pImage">
+            </div>
+            <div class="dropdown">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                    product type
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">photoframes</a>
+                    <a class="dropdown-item" href="#">handbags</a>
+                    <a class="dropdown-item" href="#">perfume</a>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="usr">product Name:</label>
+                <input type="text" class="form-control" id="pName" name="pName">
+            </div>
+            <div class="form-group">
+                <label for="pwd"> Price:</label>
+                <input type="text" class="form-control" id="pPrice" name="pPrice">
+            </div>
+            <div>
+                <label for="usr">discount:</label>
+                <input type="text" class="form-control" id="pDiscount" name="pDiscount">
+            </div>
+            <div class="form-group">
+                <label for="pwd">rating:</label>
+                <input type="text" class="form-control" id="pRating" name="pRating">
+            </div>
+            <div class="form-group">
+                <label for="pwd">description:</label>
+                <input type="text" class="form-control" id="pDescription" name="pDescription">
+            </div>
+            <div class="form-group">
+                <label for="pwd">shape:</label>
+                <input type="text" class="form-control" id="pShape" name="pShape">
+            </div>
+            <div class="form-group">
+                <label for="pwd">weight:</label>
+                <input type="text" class="form-control" id="pWeight" name="pWeight">
+            </div>
+
+            <button type="submit">submit</button>
+
+        </div>
+        <!-- id="addProductsToCards" -->
+
+        <div id="categoryPopUp" style="display: none; margin-top: 55px;">
+            <div class="form-group">
+                <label for="pwd">product category:</label>
+                <input type="password" class="form-control" id="categoryId">
+                <button style="margin-top: 14px;" type="submit" id="addProductsToCards">submit</button>
+            </div>
+        </div>
+
+
+        <div id="cardsAdminPopUP">
+            <div class="row rowClass">
+                <div class="col-md-4 col-sm-6 col-12 cardClassCol">
+                    <div class="container cardClass">
+                        <img class="imageClass"
+                            src="https://image.shutterstock.com/image-photo/3d-wallpaper-beautiful-flower-background-260nw-1385636237.jpg"
+                            alt="">
+                        <div class="headingDivClassCard">
+                            <h6 class="cardHeadingClass">Stepping Into My Birthday Women's T-Shirt</h6>
+                        </div>
+                        <div>
+                            <div class="priceTagPElementDiv">
+                                <p class="priceTagPElement"><strike class="StrikeThrough">Rs. 2300</strike> Rs.1999</p>
+                            </div>
+                            <div class="discountDiv">
+                                <p>30% off</p>
+                            </div>
+                        </div>
+                        <div><i class="far fa-star starIconClass"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span class="starsSpanClass">4.3 stars (234)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-12 cardClassCol">
+                    <div class="container cardClass">
+                        <img class="imageClass"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS85U9JkeZCqbcXLIvYXwrecHyvSnjFucFXow&usqp=CAU"
+                            alt="">
+                        <div class="headingDivClassCard">
+                            <h6 class="cardHeadingClass">Stepping Into My Birthday Women's T-Shirt Stepping Into My
+                                Birthday Women's T-Shirt</h6>
+                        </div>
+                        <div>
+                            <div class="priceTagPElementDiv">
+                                <p class="priceTagPElement"><strike class="StrikeThrough">Rs. 2300</strike> Rs.1999</p>
+                            </div>
+                            <div class="discountDiv">
+                                <p>30% off</p>
+                            </div>
+                        </div>
+                        <div><i class="far fa-star starIconClass"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span class="starsSpanClass">4.3 stars (234)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-12 cardClassCol">
+                    <div class="container cardClass">
+                        <img class="imageClass"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfSZnIfGIrEolMWI--_CfjEum1mma9yGIK9A&usqp=CAU"
+                            alt="">
+                        <div class="headingDivClassCard">
+                            <h6 class="cardHeadingClass">Stepping Into My Birthday Women's T-Shirt</h6>
+                        </div>
+                        <div>
+                            <div class="priceTagPElementDiv">
+                                <p class="priceTagPElement"><strike class="StrikeThrough">Rs. 2300</strike> Rs.1999</p>
+                            </div>
+                            <div class="discountDiv">
+                                <p>30% off</p>
+                            </div>
+                        </div>
+                        <div><i class="far fa-star starIconClass"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span class="starsSpanClass">4.3 stars (234)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-12 cardClassCol">
+                    <div class="container cardClass">
+                        <img class="imageClass"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmA-DHTp6PNwZAqFOiS-1sr_sLO07HfLDcEw&usqp=CAU"
+                            alt="">
+                        <div class="headingDivClassCard">
+                            <h6 class="cardHeadingClass">Stepping Into My Birthday Women's T-Shirt</h6>
+                        </div>
+                        <div>
+                            <div class="priceTagPElementDiv">
+                                <p class="priceTagPElement"><strike class="StrikeThrough">Rs. 2300</strike> Rs.1999</p>
+                            </div>
+                            <div class="discountDiv">
+                                <p>30% off</p>
+                            </div>
+                        </div>
+                        <div><i class="far fa-star starIconClass"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span class="starsSpanClass">4.3 stars (234)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-12 cardClassCol">
+                    <div class="container cardClass">
+                        <img class="imageClass"
+                            src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQus9rtXGG06QBn-Q13zk5oWKr-ryngXbTW-g&usqp=CAU"
+                            alt="">
+                        <div class="headingDivClassCard">
+                            <h6 class="cardHeadingClass">Stepping Into My Birthday Women's T-Shirt</h6>
+                        </div>
+                        <div>
+                            <div class="priceTagPElementDiv">
+                                <p class="priceTagPElement"><strike class="StrikeThrough">Rs. 2300</strike> Rs.1999</p>
+                            </div>
+                            <div class="discountDiv">
+                                <p>30% off</p>
+                            </div>
+                        </div>
+                        <div><i class="far fa-star starIconClass"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span class="starsSpanClass">4.3 stars (234)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/admin.js"></script>
+    <script src="../js/ajax.js"></script>
+    <script src="../js/endpoint.js"></script>
+
+
+    </body>
+
+    </html>

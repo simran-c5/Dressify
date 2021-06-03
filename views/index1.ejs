@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>description page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  
+  
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+      <script defer src="https://kit.fontawesome.com/54b37fef35.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="E:\sample\giftshopproject\public\css/discristyles.css">
+ 
+</head>
+<body>
+    <body>  
+<div class="new" >
+    <div id="closePopup"  style="height: 400px; width: 700px; z-index: 2; position: fixed; top: 100px; left: 400px; display: none;">
+        <i  class="fas fa-times" onclick="closePopup()"> </i>
+
+        <img id="imgChange" src="" style="height: 100%; width: 100%;" >
+    </div>  
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-4 col-lg-2 " >
+                
+                <img id="myImg" src="https://i.pinimg.com/236x/b4/7e/c2/b47ec2497c3617dc38629ef595e1123a.jpg" onclick ="imgPopup(this.src)"  alt="Snow" style="height: 126px; width: 111px;padding-bottom: 2%;">
+                    
+                <img id="myImg"  src="https://i.pinimg.com/236x/1a/66/76/1a667686f2b7ac2100a13df71a7a1347.jpg" onclick ="imgPopup(this.src)" alt="Snow" style="height: 126px; width: 111px;padding-bottom: 2%;">
+                         
+                <img id="myImg" src="https://i.pinimg.com/236x/9d/39/70/9d3970ee2c98e3d2a533e9aacce8e261.jpg" onclick ="imgPopup(this.src)" alt="Snow" style="height: 126px; width: 111px;padding-bottom: 2%;  ">
+                        
+            </div>
+
+            <div class=" col-2">
+                <img id="myImg" src="https://i.pinimg.com/236x/68/91/df/6891df58e7c1361c3664dcd9dbb1d0ef.jpg" onclick ="imgPopup(this.src)" alt="Snow"  style="height: 378px; width: 224px; ">
+            </div>
+                  
+                                
+            
+        </div>
+        
+
+
+    <div  style=" line-height: 1.2;  ">
+                <p>love pink women girls perfume brand perfume long lasting perfume ...</p>
+                <h4>Rs. 4990</h4> <br>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span> <br> <br>
+                <a href="#" class="btn btn-danger btn-sm"> <i class="fas fa-cart-arrow-down"></i> add to cart</a>
+                <a href="#" class="btn btn-danger btn-sm"> <i class="fas fa-heart"></i> wishlist</a>
+                <hr>
+                <h4> DELIVERY OPTIONS <i class="fas fa-truck"></i></h4> <br>
+                <p>100% Original Product</p>
+                <p>Free Delivery on order above Rs. 799 Pay on delivery might be available</p>
+                <p>Easy 30 days returns and exchanges</p>
+                <hr>
+                <h4>BEST OFFERS</h4> <br>
+                <p>This product is already at its best price</p>
+                <hr>
+                <h4> SPECIFICATIONS</h4>
+                <p> color: blue </p>
+                <p>material: wood</p>
+
+                <hr>
+                <h4>PRODUCT DETAILS <i class="fas fa-pen"></i></h4> <br>
+                <p>Beige and pink yoke design kurta with palazzos and dupatta
+                   Beige and pink yoke design straight calf length kurta, has a round neck, three-quarter sleeves, side slits
+                   Beige solid palazzos with hem design, has an elasticated waistband with slip-on closure
+                   Beige and pink self striped dupatta, has tasselled border
+                </p>
+            </div>
+   </div> 
+
+</div>
+
+<script type="text/javascript">
+    
+function closePopup(){
+    document.getElementById("closePopup").style.display = "none";
+}
+
+function imgPopup(srcOfImg) {
+
+    document.getElementById("closePopup").style.display = "block";
+ 
+document.getElementById("imgChange").src = srcOfImg;
+}
+</script>
+
+
+</div>      
+
+    
+</body>
+</html>
