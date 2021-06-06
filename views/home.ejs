@@ -61,8 +61,16 @@
             box-shadow: 0 3px 6px rgb(0 0 0 / 16%), 0 3px 6px rgb(0 0 0 / 23%);
             margin: 8% 0;
         }
-        .categoryHeading{
+
+        .categoryHeading {
             margin-top: 14%;
+        }
+
+        .PopUpClassCustom {
+            height: 30rem;
+        }
+        .PopUpClassCustomSignup{
+            height: 33rem;
         }
     </style>
 </head>
@@ -154,7 +162,8 @@
             <div class="row">
                 <div class="col-12 col-sm-6">
                     <p class="headingText textCenter">FABLOE WHOLESALE</p>
-                    <p class="textStyling textCenter">We, team Fabloe, are fabric manufacturers providing various form of
+                    <p class="textStyling textCenter">We, team Fabloe, are fabric manufacturers providing various form
+                        of
                         comprehensive
                         range of cotton, handloom textured and contemporary fabrics with numerous designs, from 40
                         meters to
@@ -179,13 +188,11 @@
             </div>
         </div>
 
-        <div class="modal LoginPopUpClass modal-lg" id="myModal">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    </div>
+        <div class="modal PopUpClassCustomSignup" id="myModal1">
+            <div class="modal-dialog modal-dialog-centered" style="height: 87%;">
+                <div class="modal-content" style="height: 100%;">
                     <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
                         <div class="container textCenter">
                             <h5>Login</h5>
                         </div>
@@ -197,6 +204,51 @@
                                 <input type="password" class="form-control" id="pwd" placeholder="Password">
                             </div>
                             <button type="button" class="btn mainColor btn-block">Login</button>
+                        </div>
+                        <div class="container mt-2">
+                            <div class="row">
+                                <div class="col-7">
+                                     <span>Don't have an account?</span><a href="">register</a>
+                                </div>
+                               <div class="col-5" style="text-align: end;">
+                                   <a href="">Forgot password?</a>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal PopUpClassCustom" id="myModal">
+            <div class="modal-dialog modal-dialog-centered" style="height: 87%;">
+                <div class="modal-content" style="height: 100%;">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <div class="container textCenter">
+                            <h5>Signup</h5>
+                        </div>
+                        <div class="container mt-5">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="usr" placeholder="Full Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="usr" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="pwd" placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="pwd" placeholder="Confirm Password">
+                            </div>
+                            <button type="button" class="btn mainColor btn-block">Signup</button>
+                        </div>
+                        <div class="container mt-2">
+                            <div class="row">
+                                <div class="col-12">
+                                     <span>Already have an account?</span><a href="">Signin</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
