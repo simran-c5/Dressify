@@ -1,9 +1,9 @@
 const express = require("express");
 const router = express.Router()
 
-router.get("/description", function(req,res) {
-	res.render('index1');
-})
+// router.get("/description", function(req,res) {
+// 	res.render('index1');
+// })
 router.get("/aboutus", function(req,res) {
 	res.render('aboutus');
 })
@@ -20,6 +20,10 @@ router.get("/home", function(req,res) {
 })
 router.get("/cake", function(req,res) {
 	res.render('cake');
+	
+})
+router.get("/description", function(req,res) {
+	res.render('description');
 	
 })
 module.exports = router

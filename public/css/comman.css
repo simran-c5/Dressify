@@ -1,0 +1,36 @@
+.headingText {
+    font-size: 1.5rem;
+    font-family: unset;
+    margin-bottom: 6px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.textStyling {
+    font-size: 1.2rem;
+    word-spacing: 2px;
+}
+.font_weight{
+    font-weight: bold;
+}
+.padding0 {
+    padding-left: 0%;
+}
+.exploreBtnDivClass {
+    text-align: center;
+}
+.textCenter {
+    text-align: center;
+}
+.textleft{
+    text-align: left;
+}
+.btnStyling {
+    background-color: #2B3A4C;
+    color: white;
+    width: 113px;
+    height: 43px;
+}
+.mt_6 {
+    margin-top: 6%;
+}

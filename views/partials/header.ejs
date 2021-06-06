@@ -1,0 +1,67 @@
+<style>
+    .navBarItem {
+    margin-left: auto;
+}
+
+
+.searchBar {
+    margin-left: 30%;
+    border: 1px solid white;
+    border-radius: 3px;
+    padding-left: 10px;
+    width: 240px;
+    height: 35px;
+    margin-bottom: 0 !important;
+    margin-top: 3px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.shopName {
+    margin-left: 5%;
+}
+
+@media screen and (max-width: 500px) {
+    .searchBar{
+        margin-left: auto;
+    }
+ .searchBarstyle{
+     margin: 2% 5%;
+ }
+ .heart{
+    margin: 2% 2%;
+ }
+ 
+}
+
+</style>
+<section id="navigationBar">
+    <nav class="navbar navbar-expand-sm bg-light navbar-light navbarClass fixed-top ">
+        <a class="navbar-brand shopName " href="#">Dressify</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse s" id="collapsibleNavbar">
+            <ul class="navbar-nav  navbarUlClass searchBarstyle">
+                <li class="nav-item">
+                    <input class="form-input searchBar searchBarClass" type="text" placeholder="Search...">
+                </li>
+            </ul>
+            <ul class="navbar-nav navBarItem secondaryUl">
+                <li class="nav-item heart ">
+                    <div class="container">
+                        <i class="fas fa-cart-arrow-down "></i>
+                    </div>
+                </li>
+                <li class="nav-item heart ">
+                    <div class="container">
+                        <i class="fa fa-heart"></i>
+                    </div>
+                </li>
+                <li class="nav-item heart">
+                    <div class="container">
+                        <i data-toggle="modal" data-target="#myModal" class="far fa-user "></i>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</section>
