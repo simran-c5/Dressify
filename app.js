@@ -9,7 +9,7 @@ const upload = multer({
     dest: 'uploads/'
 })
 
-
+require('./auth/passport');
 const pageRoutes = require("./apis/routes/pageroutes");
 const auth = require("./apis/routes/auth");
 const requireAuth = passport.authenticate("jwt", { session: false });

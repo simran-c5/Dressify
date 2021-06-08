@@ -198,12 +198,15 @@
                         </div>
                         <div class="container mt-5">
                             <div class="form-group">
-                                <input type="text" class="form-control" id="usr" placeholder="Email">
+                                <input type="text" class="form-control" id="emailId" placeholder="Email">
+                                <p id="err5"></p>
                             </div>
                             <div class="form-group">
-                                <input type="password" class="form-control" id="pwd" placeholder="Password">
+                                <input type="password" class="form-control" id="passwordId" placeholder="Password">
+                                <p id="err6"></p>
                             </div>
-                            <button type="button" class="btn mainColor btn-block">Login</button>
+                            <button type="button" id="loginSubmit" class="btn mainColor btn-block">Login</button>
+                            <p></p>
                         </div>
                         <div class="container mt-2">
                             <div class="row">
@@ -230,23 +233,27 @@
                         </div>
                         <div class="container mt-5">
                             <div class="form-group">
-                                <input type="text" class="form-control" id="usr" placeholder="Full Name">
+                                <input type="text" class="form-control" id="name" placeholder="Full Name">
+                                <p id="err1"></p>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" id="usr" placeholder="Email">
+                                <input type="text" class="form-control" id="email" placeholder="Email">
+                                <p id="err2"></p>
                             </div>
                             <div class="form-group">
-                                <input type="password" class="form-control" id="pwd" placeholder="Password">
+                                <input type="password" class="form-control" id="password" placeholder="Password">
+                                <p id="err3"></p>
                             </div>
                             <div class="form-group">
-                                <input type="password" class="form-control" id="pwd" placeholder="Confirm Password">
+                                <input type="password" class="form-control" id="confirmpassword" placeholder="Confirm Password">
+                                <p id="err4"></p>
                             </div>
-                            <button type="button" class="btn mainColor btn-block">Signup</button>
+                            <button type="button" id="signUpSubmit" class="btn mainColor btn-block">Signup</button>
                         </div>
                         <div class="container mt-2">
                             <div class="row">
                                 <div class="col-12">
-                                     <span>Already have an account?</span><a href="">Signin</a>
+                                     <span>Already have an account?</span><a href="" data-toggle="modal" data-target="#myModal1" data-dismiss="modal">Signin</a>
                                 </div>
                             </div>
                         </div>
@@ -376,6 +383,13 @@
         <footer>
 
         </footer>
+
+        <script src="js/ajax.js"></script>
+        <script src="js/endpoints.js"></script>
+        <script src="js/signup.js"></script>
+        <script src="js/login.js"></script>
+        <script src="js/validations.js"></script>
+
 
 </body>
 
