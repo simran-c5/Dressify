@@ -26,7 +26,5 @@ router.get("/description", function(req,res) {
 	res.render('description');
 	
 })
-router.get("/admin", function(req,res) {
-	res.render('admin-panel');	
-})
+
 module.exports = router

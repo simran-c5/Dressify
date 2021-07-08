@@ -11,6 +11,7 @@ const upload = multer({
 
 require('./auth/passport');
 const pageRoutes = require("./apis/routes/pageroutes");
+const adminRoutes = require("./apis/routes/admin_routes");
 const auth = require("./apis/routes/auth");
 const requireAuth = passport.authenticate("jwt", { session: false });
 
@@ -28,6 +29,7 @@ app.use(express.static("public"));
 
 app.use('/auth',auth);
 app.use("/",pageRoutes);
+app.use("/admin",adminRoutes);
 app.listen(3000,function(){
   console.log("server is running on port number 3000");
 });
