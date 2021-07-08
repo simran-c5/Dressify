@@ -6,6 +6,7 @@ const path =require("path");
 const upload = multer({
     dest: 'uploads/'
 })
+const Product = require("../../modals/products-schema");
 
 router.post("/productImageSave", upload.single('imageName'),function(req,res){
     console.log(req.file);
@@ -15,7 +16,17 @@ router.post("/productImageSave", upload.single('imageName'),function(req,res){
      contentType: 'image/*'
     }
     console.log(newImg);
-
+    Product.create({product_image},(err,product)=>{
+        console.log(product);
+        if(err){
+            console.log(err);
+        }
+        res.redirect("/admin");
+        // res.json({
+        //     status:"success",
+        //     message:"picture saved successfully"
+        // })
+    })
 
     fs.unlinkSync(req.file.path, function(err) {
         if (err) {
