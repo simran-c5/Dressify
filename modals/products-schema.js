@@ -10,6 +10,9 @@ const productSchema = mongoose.Schema({
         type:String,
         // required:true
     },
+    product_price:{
+        type:Number
+    },
     product_image:{
 		data: Buffer,
 		contentType: String
