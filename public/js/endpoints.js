@@ -1,4 +1,4 @@
-const API_SERVER = "http://localhost:3000/"
+const API_SERVER = "http://localhost:4000/"
 
 const REQUEST_TYPE = {
     GET: "GET",
@@ -21,7 +21,7 @@ const API_LIST = {
     GETUSERDETAILS :  `${API_SERVER}admin/getproductdetail/`,
     // GETHOMEPAGE :  `${API_SERVER}`,
     // DELETEDATA : `${API_SERVER}deleteDetail/`,
-    // EDITDATA : `${API_SERVER}editDetails/`,
+    EDITDATA : `${API_SERVER}admin/adminEditProductDetails/`,
     // GETREGISTERUSERS :  `${API_SERVER}userRegister/`,
     // DELETEREGISTERUSER :  `${API_SERVER}deleteUser/`,
     // EDITREGISTERUSER :  `${API_SERVER}editData/`

@@ -30,6 +30,6 @@ app.use(express.static("public"));
 app.use('/auth',auth);
 app.use("/",pageRoutes);
 app.use("/admin",adminRoutes);
-app.listen(3000,function(){
-  console.log("server is running on port number 3000");
+app.listen(4000,function(){
+  console.log("server is running on port number 4000");
 });

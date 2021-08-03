@@ -73,4 +73,7 @@
         .rowClass {
             margin-top: 50px !important;
         }
+        .editDetailsClass{
+            overflow: scroll;
+        }
    

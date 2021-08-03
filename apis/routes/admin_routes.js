@@ -86,7 +86,23 @@ router.post("/productImageSave", upload.single('imageName'),function(req,res){
 
 
 })
+router.post("/adminEditProductDetails", (req, res) => {
+    const data = req.body;
+    console.log("confirm");
+    Product.findOneAndUpdate({ _id: data.id }, { product_name: data.productName , product_category: data.productCategory, product_price: data.productPrice, product_description: data.productDescription,product_fabric: data.productFabric,product_color: data.productColor,product_brand: data.productBrand }, (err, docs) => {
+        if (err) {
+            console.log(err);
+        }
+        else {
+            res.json({
+                status: "success",
+                data: docs
+            });
+        }
+    });
 
+
+});
 
 
 
