@@ -1,4 +1,4 @@
-const API_SERVER = "http://localhost:4000/"
+const API_SERVER = "http://localhost:3000/"
 
 const REQUEST_TYPE = {
     GET: "GET",
@@ -13,15 +13,16 @@ const API_LIST = {
 
     SIGNUPPOPUP: `${API_SERVER}auth/signup/`,
     LOGINPOPUP: `${API_SERVER}auth/signin/`,
-    ADMINPRODUCTADD :  `${API_SERVER}admin/adminAddProductDetails/`,
+    ADMINPRODUCTADD: `${API_SERVER}admin/adminAddProductDetails/`,
     // LOGINSUBMIT :  `${API_SERVER}submitchk/`,
     // SUCCESS :  `${API_SERVER}success/`,
     // USERDETAILS :  `${API_SERVER}submitdetail/`,
     // USERDETAILSPAGE :  `${API_SERVER}userdetail/`,
-    GETUSERDETAILS :  `${API_SERVER}admin/getproductdetail/`,
+    GETALLPRODUCTS: `${API_SERVER}getAllProducts/`,
     // GETHOMEPAGE :  `${API_SERVER}`,
     // DELETEDATA : `${API_SERVER}deleteDetail/`,
-    EDITDATA : `${API_SERVER}admin/adminEditProductDetails/`,
+    EDITDATA: `${API_SERVER}admin/adminEditProductDetails/`,
+    GETPRODUCTDETAILS: `${API_SERVER}user/getProductDetail/`,
     // GETREGISTERUSERS :  `${API_SERVER}userRegister/`,
     // DELETEREGISTERUSER :  `${API_SERVER}deleteUser/`,
     // EDITREGISTERUSER :  `${API_SERVER}editData/`

@@ -41,21 +41,6 @@ console.log("testing finding error");
     });
 });
 
-router.get("/getproductdetail", function (req, res) {
-    console.log(req.body,"gsjdfsfdsfjslfjds");
-    Product.find({}, function (err, docs) {
-        if (err) {
-            console.log(err);
-        }
-        else {
-            res.json({
-                status: "success",
-                data: docs
-            });
-        }
-
-    });
-});
 
 router.post("/productImageSave", upload.single('imageName'),function(req,res){
     

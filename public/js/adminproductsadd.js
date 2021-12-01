@@ -1,6 +1,6 @@
 let detail_id;
 let productid;
-let userContacts = []
+let userContacts = [];
 const adminProductAddAPI = async (data) => {
   console.log("preparing");
   const variable = await ajax(REQUEST_TYPE.POST, API_LIST.ADMINPRODUCTADD, data);
@@ -23,6 +23,20 @@ const editDetailsAPI = async (data) => {
 
   }
 }
+
+const getdetails = async () => {
+  const result = await ajax(REQUEST_TYPE.GET, API_LIST.GETALLPRODUCTS, {})
+  console.log(result);
+  if (result.data) {
+    userContacts = result.data;
+    showdetails(result.data);
+    showProductsToUser(result.data);
+  }
+  else {
+    console.log("no details found");
+  }
+}
+
 const editDetailsPopUp = (id) => {
   let result = userContacts.find(obj => obj._id == id);
   productid=id;
@@ -37,6 +51,7 @@ $('#productDescription1').val(result.product_description);
   $("#adminEditModal").show();
 
 }
+
 const editSubmit = () => {
   let data = {};
   data.id=productid;
@@ -127,64 +142,7 @@ const showdetails = (data) => {
   clickOnBtn();
 
 }
-const showProductsToUser = (data) => {
-  let html = ``
-  data.forEach((d) => {
-    let base64data = _arrayBufferToBase64(d.product_image.data.data);
 
-    html = `${html}
-    <div class="col-lg-3 col-sm-6 col-md-4 col-12 cardClassCol" id="${d._id}">
-    <div class="container cardClass">
-    <img class="imageClass" src="data:image/${d.product_image.contentType};base64,
-    ${base64data}">
-        <div class="headingDivClassCard">
-            <h6 class="cardHeadingClass">${d.product_name}</h6>
-        </div>
-        <div>
-            <div class="priceTagPElementDiv">
-                <p class="priceTagPElement"><strike class="StrikeThrough">Rs. 2300</strike> ${d.product_price}</p>
-            </div>
-            <div class="discountDiv">
-                <p>30% off</p>
-            </div>
-        </div>
-        <div><i class="far fa-star starIconClass"></i>
-            <i class="far fa-star"></i>
-            <i class="far fa-star"></i>
-            <i class="far fa-star"></i>
-            <i class="far fa-star"></i>
-            <span class="starsSpanClass">4.3 stars (234)</span>
-        </div>
-    </div>
-</div>
-     
-  `
-  })
-  $("#showproducttouser").html(html);
-  clickOnBtn();
-
-}
-function _arrayBufferToBase64(buffer) {
-  var binary = '';
-  var bytes = new Uint8Array(buffer);
-  var len = bytes.byteLength;
-  for (var i = 0; i < len; i++) {
-    binary += String.fromCharCode(bytes[i]);
-  }
-  return window.btoa(binary);
-}
-const getdetails = async () => {
-  const result = await ajax(REQUEST_TYPE.GET, API_LIST.GETUSERDETAILS, {})
-  console.log(result);
-  if (result.data) {
-    userContacts = result.data;
-    showdetails(result.data);
-    showProductsToUser(result.data);
-  }
-  else {
-    console.log("no details found");
-  }
-}
 const clickOnBtn = () => {
   $("#adiminSubmitProductAdd").unbind("click");
   $("#adiminSubmitProductAdd").click(function () {

@@ -1,6 +1,38 @@
 const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
 
+const productSchema = mongoose.Schema({
+    product_name: {
+        type: String,
+        // required:true
+    },
+    product_category: {
+        type: String,
+        // required:true
+    },
+    product_price: {
+        type: Number
+    },
+    product_image: {
+        data: Buffer,
+        contentType: String
+    },
+    product_description: {
+        type: String,
+        // required:true
+    },
+    product_fabric: {
+        type: String,
+    },
+    product_color: {
+        type: String,
+    },
+    product_brand: {
+        type: String,
+    }
+})
+
+
 const userSchema = mongoose.Schema({
     name:{
         type:String,
@@ -9,7 +41,7 @@ const userSchema = mongoose.Schema({
     email:{
         type:String,
         required:true,
-        unique:true
+        unique:true,
     },
     password:{
         type:String,
@@ -32,7 +64,8 @@ const userSchema = mongoose.Schema({
     },
     state:{
         type:String
-    }
+    },
+    cart: [productSchema]
 })
 
 
