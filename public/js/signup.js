@@ -1,4 +1,5 @@
 const signupAPI = async (data) => {
+    console.log("testingsignup");
     const result = await ajax(REQUEST_TYPE.POST, API_LIST.SIGNUPPOPUP, data);
     if (result.status == "success") {
         console.log("success");

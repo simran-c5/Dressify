@@ -19,8 +19,10 @@ const API_LIST = {
     // USERDETAILS :  `${API_SERVER}submitdetail/`,
     // USERDETAILSPAGE :  `${API_SERVER}userdetail/`,
     GETUSERDETAILS :  `${API_SERVER}admin/getproductdetail/`,
+    GETUSERINFO :  `${API_SERVER}admin/getuserinfo/`,
+
     // GETHOMEPAGE :  `${API_SERVER}`,
-    // DELETEDATA : `${API_SERVER}deleteDetail/`,
+    DELETEDATA : `${API_SERVER}admin/deleteDetail/`,
     EDITDATA : `${API_SERVER}admin/adminEditProductDetails/`,
     // GETREGISTERUSERS :  `${API_SERVER}userRegister/`,
     // DELETEREGISTERUSER :  `${API_SERVER}deleteUser/`,
