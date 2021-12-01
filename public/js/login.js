@@ -4,7 +4,7 @@ const loginAPI = async (data) => {
         console.log("success");
         window.localStorage.setItem("TOKEN", result.token);
         window.localStorage.setItem('USER', result.user.email);
-        $(".PopUpClassCustomSignup").hide();
+        $(".PopUpClassCustomSignup").modal('hide');
 
     }
     console.log(result);
