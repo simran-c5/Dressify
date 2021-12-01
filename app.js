@@ -35,7 +35,7 @@ app.use(express.static("public"));
 app.use('/auth', auth);
 app.use("/", pageRoutes);
 
-app.use("/user",requireAuth, userRoutes);
+app.use("/user", userRoutes);
 app.use("/admin", adminRoutes);
 
 

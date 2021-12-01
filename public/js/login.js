@@ -3,7 +3,7 @@ const loginAPI = async (data) => {
     if (result.status == "success") {
         console.log("success");
         window.localStorage.setItem("TOKEN", result.token);
-        window.localStorage.setItem('USER', result.user.email)
+        window.localStorage.setItem('USER', result.user.email);
         $(".PopUpClassCustomSignup").hide();
 
     }

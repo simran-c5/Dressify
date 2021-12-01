@@ -5,7 +5,7 @@ const Product = require("../../modals/products-schema");
 router.get("/getProductDetail", async (req, res) => {
     let id = req.query.id;
     let user = req.user;
-    console.log(id,user);
+    console.log(id,user,"line 6");
     Product.findOne({_id:id}, function(err,doc){
         if (err) {
             res.json({
