@@ -1,4 +1,5 @@
 let detail_id;
+let editContactId;
 let productid;
 let userContacts = [];
 const adminProductAddAPI = async (data) => {
@@ -143,26 +144,47 @@ const showdetails = (data) => {
 
 }
 
+
 const clickOnBtn = () => {
+  $("#updateImage").unbind("click");
+  $("#updateImage").click(function () {
+    console.log(editContactId);
+    $('#productId').val(editContactId );
+         $("#imageModal").show();
+
+
+  });
+
   $("#adiminSubmitProductAdd").unbind("click");
   $("#adiminSubmitProductAdd").click(function () {
     adiminSubmit();
 
   });
 
+
   $("#closeBtnImgPopUp").click(function () {
 
     $("#imageModal").hide();
     $("#addDetailsParent").show();
   });
+  $(".deleteBtnClass").unbind("click")
+  $(".deleteBtnClass").click(function(){
+     let data = {
+          id: $(this).parent().attr("id")
+      }
+      console.log(data);
+    userRegisterDeleteAPI(data);
+  });
 
   $("#dashboardId").click(function () {
     $("#addDetailsParent").hide();
-    $("#dashboardparent").show();
+    $("#useDetailParent").hide();
+    $("#productDetailsCard").show();
 
   });
   $("#addNewProductId").click(function () {
-    $("#dashboardparent").hide();
+    $("#productDetailsCard").hide();
+    $("#useDetailParent").hide();
     $("#addDetailsParent").show();
 
   });

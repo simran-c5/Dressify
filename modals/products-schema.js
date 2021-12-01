@@ -15,7 +15,9 @@ const productSchema = mongoose.Schema({
     },
     product_image:{
 		data: Buffer,
-		contentType: String
+		contentType: String,
+ 
+
 	},
     product_description:{
         type:String,

@@ -4,6 +4,7 @@ const multer = require("multer");
 const fs = require("fs");
 const path =require("path");
 const Product = require("../../modals/products-schema");
+const User= require("../../modals/userSchema");
 
 const upload = multer({
     dest: 'uploads/'
@@ -71,6 +72,21 @@ router.post("/productImageSave", upload.single('imageName'),function(req,res){
 
 
 })
+
+router.delete('/deleteDetail', function (req, res) {
+    console.log(req.body);
+    Product.deleteOne({ _id: req.body.id }, (err, docs) => {
+        if (err) {
+            console.log(err);
+        }
+        else {
+            res.json({
+                status: "success",
+                data: docs
+            });
+        }
+    });
+});
 router.post("/adminEditProductDetails", (req, res) => {
     const data = req.body;
     console.log("confirm");
@@ -87,6 +103,22 @@ router.post("/adminEditProductDetails", (req, res) => {
     });
 
 
+});
+
+router.get("/getuserinfo",function (req, res) {
+    console.log("cheaking");
+    User.find({}, function (err, docs) {
+        if (err) {
+            console.log(err);
+        }
+        else {
+            res.json({
+                status: "success",
+                data: docs
+            });
+        }
+
+    });
 });
 
 
